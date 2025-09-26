@@ -3,16 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive example</title>
+    <title>Awesome fish facts</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
         
-        header, 
+        header{
+            background-color: rgb(0, 56, 63);
+
+        }
+
+
         footer {
-            background-color: rgb(100, 200, 255);
+            background-color: rgb(0, 56, 63);
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            right: 0;
+        }
+
+         nav ul a {
+            text-decoration: none;
+            color: rgb(229, 255, 0); /* Default link color (White) */
+            text-transform: uppercase; }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 300;
+            color: rgb(0, 0, 0);
         }
 
         nav ul {
@@ -25,43 +48,182 @@
 
         nav ul li {
             margin: 10px auto 10px auto;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid rgb(229, 255, 0);
             padding-bottom: 8px;
+        }
+
+        .active {
+            font-weight: bold;
+        }
+
+
+        #addContent {
+            color: rgb(0, 81, 255); 
         }
 
         nav ul li:last-child {
             border-bottom: none;
         }
+                section {
+            margin-bottom: 45px;
+        margin-top: 45px;
+}
 
-        nav ul a {
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-        }
+
+
+
 
         @media (min-width: 768px) {
             nav ul {
                 display: flex;
                 flex-direction: row;
+                justify-content: space-evenly;
             }
+
+            nav ul li {
+                border-bottom: none;
+                margin: 10px;
+            }
+            
+            nav ul a {
+                color: rgb(255, 255, 255); 
+        }
+                body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header{
+            background-color: rgb(7, 22, 54);
+
         }
 
+
+        footer {
+            background-color: rgb(7, 22, 54);
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            right: 0;
+        }
+    }
+
+
+
+
+
+
+
+        @media (min-width: 1600px) {
+            header {
+    
+                background-color: rgb(20, 44, 80); 
+            }
+            
+            nav ul {
+                justify-content: space-between; 
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+
+            nav ul li {
+                margin: 10px 30px; 
+            }
+            
+
+               body {
+                background-color: black;
+            }
+            
+            main {
+                color: white; 
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                color: white; 
+            }
+
+            header {
+                background-color: rgb(31, 31, 31); 
+            }
+            
+            footer {
+                background-color:rgb(31, 31, 31); 
+                position: fixed; 
+                bottom: 0; 
+                left: 0; 
+                right: 0;
+            }
+            
+            
+            nav ul a {
+                color: rgb(0, 255, 213); 
+            }
+        
+            #addContent {
+            color: rgb(0, 189, 173); }
+                
+            main div {
+                display: flex;
+                flex-direction: row; /* Layout items left-to-right */
+                justify-content: space-evenly; /* Distribute space evenly around items */
+                margin-bottom: 45px; /* Keep vertical spacing after the container */
+            }
+
+            main div section { /* Target sections inside the div */
+                /* Set a basis for the sections, allowing space-evenly to create gaps */
+                flex: 0 1 30%; 
+                /* Reset margin-bottom for sections in a row */
+                margin-bottom: 0; 
+            }
+        }
+    
+        
     </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#somelinkhere">Home</a></li>
-                <li><a href="#somelinkhere">Work</a></li>
-                <li><a href="#somelinkhere">Blog</a></li>
+                <li class=""><a href="#somelinkhere">Sharks</a></li>
+                <li class="active "><a href="#somelinkhere">Fish</a></li>
+                <li class=""><a href="#somelinkhere">Crustaceans</a></li>
             </ul>
         </nav>
     </header>
     <main>
+      
+        <h1>Awesome fish facts</h1>
+        <p>This is a simple example of a responsive navigation bar using HTML and CSS. Resize the browser window to see how the navigation bar adapts to different screen sizes.</p>
+        <p id="addContent">Learn more about fish.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus autem pariatur eligendi aut labore. Nulla qui ipsum aliquam, ex, non placeat ipsam voluptatem quia illo repellendus suscipit fugit reprehenderit nisi!</p>    
 
+        
+  <div>
+        <section id="mandarin">
+            <h2>1. Mandarinfish </h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsr8FvO-sqA9ijleXlm3tLxGjTU69fqbkIu8Z-41kSgvAD4IWhSaTeivG1Y3dBfwb0clJsmIHbDOm1da9njV0ojvu8SETGLPyEfuDIBQ" alt="Colorful Mandarin Fish" class="fact-image"> </p>
+      
+        </section>
+
+        <section id="Angler">
+            <h2>1. Anglerfish </h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB-Oi7o12O0OeNiSnPaXng8qi1h6nQm2aVELVroAlTbLVgvQhHUvblcY_1hOulYhie2LzDH_dRRZGk9xdvLh1jrzkpHcuJKiwEGqEXSwE" alt="Colorful Mandarin Fish" class="fact-image"> </p>
+      
+        </section>
+
+        <section id="Clownfish">
+            <h2>1. Clownfish </h2>
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXGkovAB8qm-9uSB9oi_1PRNzvDsariqv6IZmq3ucKV6gZ81a31t_SqtYQcbpdsuX9BmuD46qxcTkKehGSHvoKFGTs1vXtSd1mVKBt028" alt="Colorful Mandarin Fish" class="fact-image"> </p>
+      
+        </section>
+        </div>
     </main>
     <footer>
+        
+         <p style="color: white; text-align: center; padding: 10px;">#supercoolfishfacts
+       
+   
     </footer>
 </body>
 </html>
